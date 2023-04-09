@@ -1,4 +1,4 @@
-require "plugins.setup"
+require "plugins.packer"
 require "plugins.nvim-tree"
 require "plugins.vim-go"
 require "plugins.telescope"
