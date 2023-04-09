@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 
     -- File Explorer
     use {
-        "nvim-tree/nvim-tree.lua",   -- https://github.com/nvim-tree/nvim-tree.lua
+        "nvim-tree/nvim-tree.lua",         -- https://github.com/nvim-tree/nvim-tree.lua
         requires = {
             "nvim-tree/nvim-web-devicons", -- https://github.com/nvim-tree/nvim-web-devicons
         },
@@ -52,7 +52,7 @@ return require('packer').startup(function(use)
             -- LSP Support
             { 'neovim/nvim-lspconfig' }, -- Required
             {
-                               -- Optional
+                -- Optional
                 'williamboman/mason.nvim',
                 run = function()
                     pcall(vim.cmd, 'MasonUpdate')
@@ -61,14 +61,14 @@ return require('packer').startup(function(use)
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' }, -- Required
+            { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
 
     -- Golang
-    -- use "fatih/vim-go"                        -- https://github.com/fatih/vim-go
+    use "fatih/vim-go" -- https://github.com/fatih/vim-go
 
     -- Git Plugin for nvim
     use("tpope/vim-fugitive")
