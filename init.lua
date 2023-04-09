@@ -4,6 +4,7 @@ require "plugins.vim-go"
 require "plugins.telescope"
 require "user.options"
 require "plugins.key-mappings"
+require "plugins.lsp"
 
 vim.cmd.colorscheme "dracula"
 vim.opt.termguicolors = false
